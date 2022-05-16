@@ -9,6 +9,8 @@
 		<section class="content">
 		  <div class="row">
 
+		  <div class="col-12">
+
 			 <div class="box">
 				<div class="box-header with-border">
 				  <h3 class="box-title">All Users List</h3>
@@ -24,16 +26,18 @@
 								<th>Role</th>
 								<th>Name</th>
 								<th>E-mail</th>
-								<th width="18%">Action</th>
+								<th>Code</th>
+								<th width="20%">Action</th>
 							</tr>
 						</thead>
 						<tbody>
                             @foreach($allData as $key => $user)
 							<tr>
 								<td>{{ $key+1 }}</td>
-								<td>{{ $user->roll }}</td>
+								<td>{{ $user->role }}</td>
 								<td>{{ $user->name }}</td>
 								<td>{{ $user->email }}</td>
+								<td>{{ $user->code }}</td>
 								<td>
                                     <a href="{{ route('user.edit', $user->id) }}" class="btn btn-info">Edit</a>
                                     <a href="{{ route('user.delete', $user->id) }}" class="btn btn-danger" id="delete" >Delete</a>
@@ -41,16 +45,6 @@
 							</tr>
                             @endforeach
 						</tbody>
-<!-- 						<tfoot>
-							<tr>
-								<th>Name</th>
-								<th>Position</th>
-								<th>Office</th>
-								<th>Age</th>
-								<th>Start date</th>
-								<th>Salary</th>
-							</tr>
-						</tfoot>-->
 					  </table>
 					</div>
 				</div>

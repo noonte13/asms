@@ -29,10 +29,11 @@
      <div class="form-group">
 		<h5>User Type <span class="text-danger">*</span></h5>
 		<div class="controls">
-		<select name="roll" id="roll" required="" class="form-control">
+		<select name="role" id="role" required="" class="form-control">
 		<option value="" selected="" disabled="" >Select Role</option>
 		<option value="Admin">Admin</option>
-		<option value="User">Basic</option>
+		<option value="Operator">Operator</option>
+		<option value="Employee">Employee</option>
 </select>
 	</div>
 </div>                       
@@ -60,7 +61,7 @@
 									 
 		 </div>
 
-<div class="col-md-6">
+<!-- <div class="col-md-6">
 		 
 		 <div class="form-group">
 			 <h5>Password <span class="text-danger">*</span></h5>
@@ -69,7 +70,7 @@
 			 </div>
 									 
 		 </div>
-	
+-->	
 </div> <!--Row Finish-->
 
 

@@ -9,7 +9,7 @@ use App\Models\User;
 class UserController extends Controller
 {
     public function UserView(){
-        $data['allData'] = User::all();
+        $data['allData'] = User::where('roll', 'Admin')->get();
         return view('backend.user.view_user', $data);
 
     }
@@ -27,10 +27,13 @@ class UserController extends Controller
         ]);
 
         $data = new User();
-        $data->roll = $request->roll;
+        $code = rand(000,999);
+        $data->roll = 'Admin';
+        $data->role = $request->role;
         $data->name = $request->name;
         $data->email = $request->email;
-        $data->password = bcrypt($request->password);
+        $data->password = bcrypt($code);
+        $data->code = $code;
 
         $data->save();
         $notification = array(
@@ -52,9 +55,9 @@ class UserController extends Controller
         ]);
 
         $data = User::find($id);
-        $data->roll = $request->roll;
         $data->name = $request->name;
         $data->email = $request->email;
+        $data->role = $request->role;
 
         $data->save();
         $notification = array(

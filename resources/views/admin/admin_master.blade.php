@@ -69,18 +69,18 @@
 
           Swal.fire({
   title: 'Are you sure?',
-  text: "User will be permanently deleted!",
+  text: "Data will be permanently deleted!",
   icon: 'warning',
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete user!'
+  confirmButtonText: 'Yes, delete data!'
 }).then((result) => {
   if (result.isConfirmed) {
     window.location.href = link
     Swal.fire(
       'Deleted!',
-      'User has been deleted.',
+      'Data has been deleted.',
       'success'
     )
   }

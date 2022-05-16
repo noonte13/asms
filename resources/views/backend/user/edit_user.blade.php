@@ -29,10 +29,11 @@
      <div class="form-group">
 		<h5>User Type <span class="text-danger">*</span></h5>
 		<div class="controls">
-		<select name="roll" id="roll" required="" class="form-control">
+		<select name="role" id="role" required="" class="form-control">
 		<option value="" selected="" disabled="" >Select Role</option>
-		<option value="Admin" {{ ($editData->roll == "Admin" ? "selected": "")}}>Admin</option>
-		<option value="User" {{ ($editData->roll == "User" ? "selected": "")}}>Basic</option>
+		<option value="Admin" {{ ($editData->role == "Admin" ? "selected": "")}}>Admin</option>
+		<option value="Operator" {{ ($editData->role == "Operator" ? "selected": "")}}>Operator</option>
+		<option value="Employee" {{ ($editData->role == "Employee" ? "selected": "")}}>Employee</option>
 </select>
 	</div>
 </div>                       
