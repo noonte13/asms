@@ -39,7 +39,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text bg-transparent text-white"><i class="ti-user"></i></span>
 										</div>
-										<input type="name" id="name" name="name" class="form-control pl-15 bg-transparent text-white plc-white">
+										<input type="name" id="name" name="name" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Username">
 									</div>
 								</div>
 								<div class="form-group">
@@ -75,19 +75,16 @@
 									</div>
 									<!-- /.col -->
 									<div class="col-12 text-center">
-									  <button type="submit" class="btn btn-info btn-rounded margin-top-10">SIGN IN</button>
+									  <button type="submit" class="btn btn-info btn-rounded margin-top-10">Create User</button>
 									</div>
 									<!-- /.col -->
 								  </div>
 							</form>													
 
 							<div class="text-center text-white">
-							  <p class="mt-20">- Register With -</p>
+							  <p class="mt-20">- Make sure to fill in details! -</p>
 							  <p class="gap-items-2 mb-20">
-								  <a class="btn btn-social-icon btn-round btn-outline btn-white" href="#"><i class="fa fa-facebook"></i></a>
-								  <a class="btn btn-social-icon btn-round btn-outline btn-white" href="#"><i class="fa fa-twitter"></i></a>
-								  <a class="btn btn-social-icon btn-round btn-outline btn-white" href="#"><i class="fa fa-google-plus"></i></a>
-								  <a class="btn btn-social-icon btn-round btn-outline btn-white" href="#"><i class="fa fa-instagram"></i></a>
+								 
 								</p>	
 							</div>
 

@@ -9,7 +9,7 @@ use App\Models\User;
 class UserController extends Controller
 {
     public function UserView(){
-        $data['allData'] = User::where('roll', 'Admin')->get();
+        $data['allData'] = User::where('roll', '!=', 'Student')->where('roll', '!=', 'employee')->get();
         return view('backend.user.view_user', $data);
 
     }

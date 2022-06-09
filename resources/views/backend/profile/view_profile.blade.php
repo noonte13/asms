@@ -16,7 +16,7 @@
 					<div class="widget-user-header bg-black">
                     <a href="{{ route('profile.edit') }}" style="float:right;" class="btn btn-success mb-5" > Edit Profile</a>
 					  <h3 class="widget-user-username">User: {{ $user->name }}</h3>
-					  <h6 class="widget-user-desc">Roll: {{ $user->roll }}</h6>
+					  <h6 class="widget-user-desc">Roll: {{ $user->role }}</h6>
                       <h6 class="widget-user-desc">Email: {{ $user->email }}</h6>
 					</div>
 					<div class="widget-user-image">
